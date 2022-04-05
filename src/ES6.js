@@ -141,4 +141,19 @@
 //   array.reduce((num, previousNum) => num + previousNum, startingValue)
 // );
 
+// let array = [1, 2, 3, 4, 5, 67, 8, 9];
 
+// let anotherArray = array;
+
+// array = array.map((x) => x * x);
+// console.log(anotherArray);
+// console.log(array);
+
+//-----------------------------------------arguments
+// function SummAll(...params) {
+//   // for (let num in arguments) console.log(num);
+//   for (let num of params) console.log(num);
+// }
+// console.log(SummAll(1, 2, 3, 4, 5, 6, 7));
+
+//-------------------------------
