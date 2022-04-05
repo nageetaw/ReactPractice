@@ -49,5 +49,72 @@
 // Increament();
 
 //---------------------------------default
-const Sum = (x, y = 2) => x + y;
-console.log(Sum(5));
+// const Sum = (x, y = 2) => x + y;
+// console.log(Sum(5));
+
+//-------------------------------------Rest operator
+// const SummAll = (x, y, ...others) => {
+//   let totalSum = 0;
+//   totalSum += x + y;
+//   others.forEach((num) => (totalSum += num));
+//   return totalSum;
+// };
+// console.log(SummAll(1, 2, 3, 4, 5, 6));
+
+//---------------------------------- for in loop
+// let library = {
+//   totalBooks: 550,
+//   totalShelf: 18,
+//   librarians: 5,
+// };
+// for (let item in library) console.log(library[item]);
+
+// //------------------------------------ for of loop
+// let numbers = [11, 22, 33, 44, 55];
+// for (let num of numbers) console.log(num);
+
+// --------------------------------
+// let library = [{ price: 550 }, { price: 18 }, { price: 5 }];
+// for (let { price } of library) console.log(price);
+
+//-------------------------------------const and let
+// const pi = 3.46;
+// pi = 9.66;
+// console.log(pi); // error
+
+// let pi = 3.46;
+// pi = 9.66;
+// console.log(pi);
+
+// ------------------------var and let
+// console.log(a);
+// let a = 2; //Cannot access 'a' before initialization
+
+// console.log(b);
+// var b = 2; // undefined
+
+// for (var a = 1; a < 5; a++);
+// console.log(a); // can acees here due to function scope
+
+// for (let a = 1; a < 5; a++);
+// console.log(a); // can't acces here due to block scope
+
+//---------------- ---------------promises
+
+// function myPromise() {
+//   return new Promise((resolve, reject) => resolve(20));
+// }
+// myPromise()
+//   .then((value) => console.log(`i am resolve with the value ${value}`))
+//   .catch(() => console.log("i am rejected"));
+
+// ------------------------------------
+const sum = (x, y) => x + y;
+const multiply = (x, y) => x * y;
+
+function callTheGiveFunction(fun, x, y) {
+  // here fun is call back function
+  return fun(x, y);
+}
+console.log(callTheGiveFunction(sum, 4, 5));
+console.log(callTheGiveFunction(multiply, 4, 5));
