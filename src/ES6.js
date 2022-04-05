@@ -109,12 +109,36 @@
 //   .catch(() => console.log("i am rejected"));
 
 // ------------------------------------
-const sum = (x, y) => x + y;
-const multiply = (x, y) => x * y;
+// const sum = (x, y) => x + y;
+// const multiply = (x, y) => x * y;
 
-function callTheGiveFunction(fun, x, y) {
-  // here fun is call back function
-  return fun(x, y);
-}
-console.log(callTheGiveFunction(sum, 4, 5));
-console.log(callTheGiveFunction(multiply, 4, 5));
+// function callTheGiveFunction(fun, x, y) {
+//   // here fun is call back function
+//   return fun(x, y);
+// }
+// console.log(callTheGiveFunction(sum, 4, 5));
+// console.log(callTheGiveFunction(multiply, 4, 5));
+
+// -----------------------generator
+// function* gen() {
+//   let array = [2, 5, 6, 4, 9, 20];
+//   for (let num of array) yield num;
+// }
+// const genCaller = gen();
+// console.log(genCaller.next().value);
+// console.log(genCaller.next().value);
+// console.log(genCaller.next().value);
+// console.log(genCaller.next().value);
+
+//----------------------------filter
+// let array = [2, 5, 6, 4, 9, 20];
+// console.log(array.filter((num) => num > 10));
+
+//----------------------------reduce
+// let array = [2, 5, 6, 4, 9, 20];
+// let startingValue = 1;
+// console.log(
+//   array.reduce((num, previousNum) => num + previousNum, startingValue)
+// );
+
+
